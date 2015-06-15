@@ -1,0 +1,38 @@
+{
+  "name": "dullstring",
+  "description": "A dull string formatter",
+  "version": "0.0.0",
+  "main": "lib/levels",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keis/dullstring.git"
+  },
+  "author": "David Keijser <keijser@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha --require test/bootstrap.js --recursive test/unit",
+    "coverage": "istanbul cover _mocha --report lcovonly -- --require test/bootstrap.js --recursive test/unit",
+    "billom": "billom package.json \"$npm_package_name\" > package.html",
+    "docs": "docco lib/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "billom": "^1.0.2",
+    "chai": "^2.1.0",
+    "coveralls": "^2.11.1",
+    "docco": "^0.7.0",
+    "eslint": "^0.18.0",
+    "istanbul": "^0.3.2",
+    "mocha": "^2.1.0",
+    "sinon": "^1.14.1"
+  },
+  "keywords": [
+    "string",
+    "format",
+    "template"
+  ]
+}
