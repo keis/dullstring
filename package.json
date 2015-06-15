@@ -2,7 +2,7 @@
   "name": "dullstring",
   "description": "A dull string formatter",
   "version": "1.0.0",
-  "main": "lib/levels",
+  "main": "lib/dullstring",
   "repository": {
     "type": "git",
     "url": "https://github.com/keis/dullstring.git"
